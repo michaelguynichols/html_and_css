@@ -1,0 +1,50 @@
+body {
+  background: url('bg_body.gif');
+  font-family: Helvetica, Arial, sans-serif;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+main {
+  background-color: white;
+  margin: auto;
+  height: 450px;
+  width: 90%;
+}
+
+h1 {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+h2 {
+  padding-top: 50px;
+}
+
+h3 {
+  color: #2AAFC9;
+}
+
+p {
+  margin: auto 20% auto 20%;
+}
+
+footer {
+  width: 90%;
+  background-color: lightgray;
+  margin: auto;
+  height: 100px;
+}
+
+body ul {
+  list-style-type: none;
+  margin: auto;
+}
+
+body li {
+  display: inline-block;
+  padding-top: 25px;
+  padding-right: 75px;
+  margin: auto;
+}
