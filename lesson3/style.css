@@ -1,0 +1,86 @@
+@import url("css_reset.css");
+
+body {
+  font: normal 18px "Roboto Condensed", sans-serif;
+  background-image: linear-gradient(to bottom, #d2dbbd, #fcfff5);
+  background-repeat: no-repeat;
+  color: #3e606f;
+}
+
+header {
+  width: 920px;
+  margin: 0 auto;
+  padding: 20px 20px 0 20px;
+}
+
+h1 {
+  float: left;
+  padding: 45px 0 15px 115px;
+  font-size: 36px;
+  font-weight: normal;
+  color: #193441;
+  background: transparent url('icon.png') 0 0 no-repeat;
+}
+
+nav {
+  float: right;
+  padding: 75px 0 0 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: #91aa9d;
+  background: #fcfff5;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 10px 40px 14px 40px;
+}
+
+nav a.active {
+  color: white;
+  background: #91aa9d;
+}
+
+main {
+  clear: both;
+  overflow: hidden;
+  width: 960px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 5px #b5b5b5;
+}
+
+img.masthead {
+  display: block;
+  width: 100%;
+  margin: 0 0 40px 0;
+}
+
+img.tree {
+  float: right;
+  padding: 25px 0 0 40px;
+}
+
+p.left {
+  padding: 25px 0 0 0;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: normal;
+  padding: 0 0 25px 0;
+}
+
+footer {
+  width: 960px;
+  margin: 0 auto;
+  padding: 15px 0;
+  font-size: 14px;
+}
