@@ -1,0 +1,27 @@
+aside {
+  background: white;
+  width: 400px;
+  height: 80px;
+  padding-top: 30px;
+  position: fixed;
+  top: 0;
+  margin: 10px 0 0 30%;
+}
+
+.elem {
+  background: rgba(0, 0, 0, .6);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.partial {
+  width: 20px;
+  height: 20px;
+  background: #fcfc99;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}

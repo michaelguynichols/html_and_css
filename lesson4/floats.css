@@ -1,0 +1,25 @@
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.left {
+  float: left;
+  width: 15%;
+}
+
+article {
+  background: #EFEF98;
+  width: 70%;
+  float: left;
+}
+
+aside {
+  background: #71E471;
+  width: 15%;
+  float: right;
+}
+
+footer {
+  clear: both;
+}
