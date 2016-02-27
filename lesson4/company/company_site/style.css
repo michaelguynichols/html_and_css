@@ -1,0 +1,176 @@
+@import url('css_reset.css');
+
+body {
+  font: normal 16px "Avenir", sans-serif;
+  text-align: center;
+}
+
+header {
+  display: block;
+  height: 570px;
+  width: 100%;
+  background: url('images/bg_body.gif');
+}
+
+header h1 {
+  padding: 135px 0 0 0;
+}
+
+nav {
+  padding-top: 125px;
+}
+
+header ul {
+  list-style: none;
+}
+
+header ul a {
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: bolder;
+  color: #cacaca;
+}
+
+header ul a.active {
+  color: #6db9ff;
+}
+
+header ul li {
+  display: inline-block;
+  padding: 0 45px;
+}
+
+footer {
+  display: block;
+  height: 300px;
+  width: 100%;
+  background: #e7e7e7;
+}
+
+footer h2 {
+  width: 530px;
+  margin: 0 auto;
+  padding-top: 85px;
+  color: #45494d;
+  font-size: 20px;
+}
+
+footer ul {
+  padding-top: 45px;
+  list-style: none;
+}
+
+footer ul li {
+  display: inline-block;
+  padding: 0 62px;
+}
+
+footer ul li a {
+  display: block;
+  height: 46px;
+  width: 46px;
+  background: transparent url('images/icons_social-media.png') 0 0 repeat;
+}
+
+footer ul li a.twitter {
+
+}
+
+footer ul li a.facebook {
+  background-position: 0 -46px;
+}
+
+footer ul li a.email {
+  background-position: 0 -92px;
+}
+
+footer ul li a.photo {
+  background-position: 0 100%;
+}
+
+main h1 {
+  padding: 120px 0 45px 0;
+  font-weight: bold;
+  font-size: 36px;
+  color: #45494d;
+}
+
+main h2 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #3e59b2;
+}
+
+main p {
+  text-align: justify;
+  width: 780px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-color: #45494d;
+  padding: 20px 0 160px 0;
+}
+
+article h1 {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+article h2 {
+  padding: 50px 0 55px 0;
+  font-weight: bold;
+  font-size: 24px;
+  color: #3e59b2;
+}
+
+article p {
+  text-align: justify;
+  width: 780px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-color: #45494d;
+  padding: 0 0 135px 0;
+}
+
+.app_download {
+  padding-bottom: 50px;
+}
+
+main ul li {
+  display: inline-block;
+  padding: 0 30px;
+}
+
+main ul li a {
+  height: 150px;
+  width: 140px;
+  display: inline-block;
+}
+
+.kevin {
+  background: url('images/img_kevin.jpg') no-repeat;
+}
+
+.louis {
+  background: url('images/img_louis.jpg') no-repeat;
+}
+
+.kasper {
+  background: url('images/img_kasper.jpg') no-repeat;
+}
+
+.chris {
+  background: url('images/img_chris.jpg') no-repeat;
+}
+
+figcaption {
+  font-size: 24px;
+  color: #3e59b2;
+  padding-bottom: 230px;
+}
+
+@media (max-width: 875px) {
+  main ul li {
+    width: 48%;
+    padding: 0 0 30px 0;
+  }
+}

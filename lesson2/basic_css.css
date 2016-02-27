@@ -1,0 +1,42 @@
+.ex1 {
+  font: italic normal 16px/140% Helvetica, Arial, sans-serif;
+}
+
+code {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+em {
+  text-transform: uppercase;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+  min-width: 500px;
+}
+
+#image {
+  text-align: center;
+}
+
+#first {
+  display: inline-block;
+  background: #ffcccc;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#second {
+  display: inline-block;
+  background: #ccccff;
+  width: 300px;
+  height: 300px;
+  border: solid 2px black;
+  box-sizing: border-box;
+}
