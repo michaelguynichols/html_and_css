@@ -1,0 +1,341 @@
+@import url('reset.css');
+
+body {
+  font: normal 16px Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+#menu {
+  float: left;
+  width: 335px;
+  height: 100vh;
+  background: #464f77;
+}
+
+main {
+  overflow: hidden;
+  padding: 70px 90px 0 30px;
+  max-width: 740px;
+}
+
+span {
+  float: right;
+  font-size: 14px;
+  font-weight: 300;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  border-radius: 7.5px;
+  background: #6b7292;
+  text-align: center;
+  padding: .5px;
+  color: #bbbecb;
+}
+
+span.active {
+  background: #148fd5;
+  color: #e9f2fa;
+}
+
+h1 > span:not(.active) {
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  border-radius: 10px;
+  margin-top: 4px;
+  color: #bbbecb;
+}
+
+/* Menu with links and number of todo items */
+#menu h1,
+#menu a {
+  padding: 0 30px 0 135px;
+}
+
+#menu h1 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #d8d9e0;
+  padding-top: 70px;
+  padding-bottom: 10px;
+}
+
+#menu a {
+  display: block;
+  text-decoration: none;
+  color: #9a9eb1;
+}
+
+#menu li {
+  display: block;
+  padding: 10px 0;
+}
+
+#menu li.selected,
+#menu li:hover {
+  background: #383f5f;
+}
+
+#menu li.selected a,
+#menu li:hover a {
+  color: #d8d9e0;
+}
+
+#menu #todos h1:before,
+#menu #complete h1:before {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  content: "";
+  margin: 0 5px 0 -35px;
+  vertical-align: middle;
+  background: transparent url('images/list_icon.png') 0 0 no-repeat;
+}
+
+#menu #complete h1:before {
+  background: transparent url('images/check.png') 0 0 no-repeat;
+}
+
+#menu #complete a {
+  text-decoration: line-through;
+}
+
+#menu-toggle {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Main content view with todo list */
+main h1 {
+  font-size: 21px;
+  font-weight: 300;
+  color: #050505;
+}
+
+main h1 > span {
+  float: none;
+  display: inline-block;
+  margin-left: 20px;
+  vertical-align: 2px;
+}
+
+main h2 {
+  color: #148fd5;
+  padding: 45px 0 15px 0;
+  font-weight: 300;
+}
+
+main h2:before {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  margin-right: 10px;
+  content: "";
+  background: transparent url('images/plus_icon.png') 0 0 no-repeat;
+}
+
+main a.add {
+  text-decoration: none;
+}
+
+main table {
+  width: 100%;
+}
+
+main td {
+  padding: 14px 0;
+  border-top: 1px solid #e7e7e7;
+}
+
+main td a {
+  text-decoration: none;
+  color: #060606;
+}
+
+main td a:hover,
+main td a.checked:hover {
+  color: #148fd5;
+}
+
+main td a.checked {
+  text-decoration: line-through;
+  color: #b9b9b9;
+}
+
+main td:first-child a:before {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  margin-right: 10px;
+  content: "";
+  background: transparent url('images/unchecked_box.png') 0 0 no-repeat;
+}
+
+main td:first-child a.checked:before {
+  background: transparent url('images/checked_box.png') 0 0 no-repeat;
+}
+
+main a.delete {
+  float: right;
+  width: 18px;
+  height: 18px;
+  background: transparent url('images/trash_bin.png') 0 0 no-repeat;
+}
+
+/* Modal and modal background */
+#modal-popup {
+  display: none;
+}
+
+#modal-popup:target {
+  display: block;
+}
+
+#modal-popup-visible {
+  display: block;
+}
+
+.modal-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, .4);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 575px;
+  height: 400px;
+  padding: 30px 30px 40px 30px;
+  margin-top: -200px;
+  margin-left: -287.5px;
+  background: #ffffff;
+  z-index: 2;
+  box-sizing: border-box;
+  color: #464646;
+}
+
+.modal label {
+  display: inline-block;
+  text-align: left;
+  width: 110px;
+}
+
+.modal div + div {
+  margin-top: 20px;
+}
+
+.modal div + div.styled-select {
+  margin-top: 0;
+}
+
+.modal input[type="text"],
+.modal select,
+textarea {
+  padding: 7px 10px;
+  font: normal 16px Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+.modal input[type="text"],
+.modal textarea {
+  width: 395px;
+  box-sizing: border-box;
+}
+
+.styled-select,
+.styled-select select {
+  width: 115px;
+  height: 36px;
+  margin: 0 5.75px;
+}
+
+.styled-select {
+  display: inline-block;
+  border: 1px solid #b3b3b3;
+  vertical-align: middle;
+  box-sizing: border-box;
+  background: transparent url('images/select_arrow.png') 0 0 no-repeat;
+  background-position: 95px 10px;
+}
+
+.styled-select select {
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+.styled-select:first-of-type,
+.modal select:first-child {
+  margin-left: 0;
+}
+
+select:required:invalid {
+  color: #a1a1a1;
+}
+
+select option[value=""][disabled] {
+  color: #a1a1a1;
+}
+
+.modal textarea {
+  vertical-align: top;
+  height: 140px;
+  resize: none;
+}
+
+.modal label[for=description] {
+  padding-top: 7px;
+}
+
+.modal .modal-buttons {
+  width: 180px;
+  height: 35px;
+  font: normal 16px Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  background: #148fd5;
+  border: none;
+  border-radius: 5px;
+  color: #f4f9fc;
+}
+
+.modal .modal-buttons:last-child {
+  margin-left: 15px;
+}
+
+/* View at max-width 768px with hamburger menu */
+@media (max-width: 768px) {
+  #menu {
+    display: none;
+  }
+
+  main {
+    padding-top: 4px;
+  }
+
+  label.hamburger {
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 20px 0 22px 30px;
+    background: transparent url('images/menu_icon.png') 0 0 no-repeat;
+  }
+
+  #menu-toggle:checked + label.hamburger {
+    display: inline-block;
+  }
+
+  #menu-toggle:checked ~ #menu {
+    display: block;
+  }
+}
